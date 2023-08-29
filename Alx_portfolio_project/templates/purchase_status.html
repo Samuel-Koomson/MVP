@@ -1,0 +1,11 @@
+<!-- purchase_status.html -->
+{% extends "base.html" %}
+
+{% block content %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+    <img src="{{ url_for('static', filename='thank-you.jpg')}}" alt="purchase status">
+
+    <h1>Purchase Status</h1>
+    <p>{{ purchase_message }}</p>
+    <p>Thank You for shopping with us.</p>

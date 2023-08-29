@@ -1,21 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: green;
-}
-
+/* Style for the header */
 header {
-    background-color: orange;
+    background-color: #007bff;
     color: white;
-    text-align: center;
     padding: 10px;
+    text-align: center;
 }
 
+/* Style for the navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -24,29 +15,232 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20;
+    margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: blue;
+    color: white;
     padding-inline-start: 20px;
 }
 
-.Features, .Special-orders, .Consumer-club {
+/* Style for the footer */
+footer {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+/* Style for the footer text */
+footer p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+/* Style for the copyright text */
+footer p.copyright {
+    font-weight: bold;
+}
+
+/* Style for the developer names */
+footer p.developers {
+    color: #f39c12;
+}
+
+
+/* Style for the form container */
+form {
+    margin: 20px;
     padding: 10px;
-    background-color: none;
-    color: purple;
-    margin: 5px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-footer {
-    text-align: center;
-    background-color: green;
-    color: white;
-    padding: 50px;
+/* Style for the vegetable selection label */
+#vegetable-label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
 }
+
+/* Style for the quantity label */
+#quantity-label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Style for the vegetable select dropdown */
+#vegetable {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style for the quantity input */
+#quantity {
+    width: 50px;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style for the add button */
+button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Style for the Cost calculator*/
+
+/* Style for the article container */
+.Vegetable {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the vegetable name */
+.Vegetable h2 {
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+/* Style for the price and quantity paragraphs */
+.Vegetable p {
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Style for the total price */
+.Vegetable p.total {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Style for the Vegetable-selection section */
+.Vegetable-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Style for the Features section */
+.Features, .Special-orders, .Consumer-club {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for section headings */
+.Features h2, .Special-orders h2, .Consumer-club h2 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Style for the vegetable image */
+img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Style for the welcome message */
+p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/*CSS style for payment information */
+/* Style for the Payment Information form container */
+form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for labels */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Style for input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style for the submit button */
+button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* CSS style for purchase status */
+/* Style for the Purchase Status container */
+#purchase-status {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Style for the thank you image */
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style for the purchase message */
+p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Style for the thank you message */
+.thank-you {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
 
 /*This adds styles to the vegetable selection page*/
 .list-of-vegetables {
@@ -104,24 +298,5 @@ label {
     color: black;
 }
 
-/* Order Confirmation */
 
-.Summary-of-order {
-    padding: 10px;
-    background-color: white;
 
-}
-
-.Transaction-details {
-    padding: 10px;
-    background-color: none;
-    color: beige;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-.image img {
-    width: 100%;
-    max-height: 150%;
-    object-fit: cover;
-}

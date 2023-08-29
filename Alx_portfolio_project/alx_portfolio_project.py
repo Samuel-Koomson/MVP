@@ -34,8 +34,8 @@ def check_quantity_in_stock(shopping_cart):
 def calculate_cost(shopping_cart):
     total_cost = 0
     for veg_name, requested_quantity in shopping_cart:
-        # if veg_name in shopping_cart:
-        total_cost += vegetables[veg_name]['price'] * vegetables[veg_name]['quantity']
+        if veg_name in vegetables:
+            total_cost += vegetables[veg_name]['price'] * requested_quantity
     return total_cost
 # print(calculate_cost('cabbage'))
 shopping_cart = select_items()
@@ -56,20 +56,22 @@ def process_payment():
 # print(process_payment())
 
 
-def sufficient_money(price, wallet_amount):
-    return price <= wallet_amount
+def sufficient_money(total_cost, wallet_amount):
+    return total_cost <= wallet_amount
+wallet_amount = 100
+total_cost = calculate_cost(shopping_cart)
 
 
-def make_purchase():
+def make_purchase(total_cost, wallet_amount):
     if process_payment():
-        if sufficient_money(50, 100):
+        if sufficient_money(total_cost, wallet_amount):
             return "Purchase Successful"
         else:
             return "Insufficient funds in your wallet"
     else:
         return "Payment information does not match"
-print(sufficient_money(50, 100))
-print(make_purchase())
+print(sufficient_money(total_cost, wallet_amount))
+print(make_purchase(total_cost, wallet_amount))
 
 
 # def make_purchase():
