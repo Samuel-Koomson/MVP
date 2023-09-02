@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+        <title>{% block page_title %}Default Title{% endblock %}</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Fresh Vegetables</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Transaction</a></li>
+                </ul>
+            </nav>
+            <h1>Welcome to The Corporate Vegetable Shop</h1>
+            <p>Do your work, and we will take care of your nutritional needs</p>
+        </header>
+<!--      {% block content %}-->
+      {% endblock %}
+      <footer>
+            <p>&copy; 2023 The Corporate Vegetable Shop. All Rights Reserved</p>
+            <p>Developers: Samuel Koomson, Redolf Osei, Muaz Idris</p>
+        </footer>
+    </body>
+</html>
