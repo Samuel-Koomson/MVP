@@ -19,15 +19,21 @@
     </article>
 
     <section class="Features">
-        <h2>Featured Vegetables</h2>
+        <h2><a href="#"> Featured Vegetables</a></h2>
+        <p>Asparagus is our featured vegetable for today</p>
+        <img src="{{ url_for('static', filename='featured_veg.jpg')}}" alt="Featured Vegetable image">
     </section>
 
     <section class="Special-orders">
-        <h2>Special Vegetable Orders</h2>
+        <h2><a href="#"> Special Vegetable Orders</a></h2>
+        <p>Send us an email if you have special vegetables that are out of our stock list</p>
+         <img src="{{ url_for('static', filename='rear_veg.jpg')}}" alt="Special Vegetable orders">
     </section>
 
     <section class="Consumer-club">
-        <h2>Regular Buyers Club</h2>
+       <h2><a href="#">Regular Buyers Club</a></h2>
+        <p>If you are a regular customer, use your loyalty card for exciting offers</p>
+         <img src="{{ url_for('static', filename='loyalty_card.jpeg')}}" alt="Regular clients' card image">
     </section>
 {% endblock %}
 </body>
