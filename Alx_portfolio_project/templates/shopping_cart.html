@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <article class="shopping-cart-image">
+    <img src="{{ url_for('static', filename='shop_cart.jpg')}}" alt="shopping cart image">
+    </article>
+
+    <section>
+      <ol>
+        {% for item in shopping_cart_items %}
+        <li>{{ item.vegetable }} - Quantity: {{item.quantity}} kg</li>
+        {% endfor %}
+      </ol>
+    </section>
+{% endblock %}

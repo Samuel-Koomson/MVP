@@ -1,312 +1,551 @@
-/* Style for the header */
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+a{
+    text-decoration:none;
+}
+
+img{
+    width:100%;
+}
+
+ul li{
+    list-style:none;
+}
+
+
+/* Ensure all pages fit within the screen width */
+body {
+    max-width: 100%;
+    overflow-x: hidden; /* Hide horizontal scrollbar if content overflows */
+    font-family:verdana;
+}
+
+
+/* Styles for the header */
 header {
-    background-color: #007bff;
-    color: white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: orange;
     padding: 10px;
+
+}
+
+header nav ul{
+    display:flex;
+    align-items:center;
+}
+header nav ul li{
+    font-size:small;
+    margin:0 .5px;
+    padding:.5rem;
+}
+.jumbotron{
+    text-align:center;
+}
+
+/* Styles for the footer */
+footer {
+    width:100%;
+    background-color: green;
+    padding: 10px;
+}
+
+/* Styles for the home_page.html */
+.homepage-image-container {
+    margin-top: 20px;
+    height:100%;
+   /* max-height:46e0px !important;*/
+}
+
+
+
+.Features,
+.Special-orders,
+.Consumer-club {
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+
+
+
+/* Styles for the vegetable_selection.html */
+
+/* Body style for the vegetable_selection.html */
+.vegetable_selection-body {
+    background-color: #f9f9f9; /* Background color for the body */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+/* Container style for the vegetable_selection.html */
+.veg_selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
     text-align: center;
 }
 
-/* Style for the navigation */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+/* Header style for the vegetable_selection.html */
+.veg_selection h1 {
+    color: #333; /* Text color */
+    font-size: 36px; /* Font size */
     margin-bottom: 20px;
 }
 
-nav ul li {
-    margin-right: 20px;
+
+   /* border-radius: 8px; /* Add rounded corners to the image */
+   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+
+
+/* Form style for the vegetable_selection.html */
+.select-form {
+    margin-top: 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding-inline-start: 20px;
-}
-
-/* Style for the footer */
-footer {
-    text-align: center;
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-}
-
-/* Style for the footer text */
-footer p {
-    margin: 10px 0;
-    font-size: 0.9rem;
-}
-
-/* Style for the copyright text */
-footer p.copyright {
+/* Label style for the vegetable_selection.html */
+.select-form label {
     font-weight: bold;
-}
-
-/* Style for the developer names */
-footer p.developers {
-    color: #f39c12;
-}
-
-
-/* Style for the form container */
-form {
-    margin: 20px;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Style for the vegetable selection label */
-#vegetable-label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-/* Style for the quantity label */
-#quantity-label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-/* Style for the vegetable select dropdown */
-#vegetable {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-/* Style for the quantity input */
-#quantity {
-    width: 50px;
-    padding: 5px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-/* Style for the add button */
-button {
-    margin-top: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-/* Style for the Cost calculator*/
-
-/* Style for the article container */
-.Vegetable {
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Style for the vegetable name */
-.Vegetable h2 {
-    color: #007bff;
-    font-size: 1.2rem;
-}
-
-/* Style for the price and quantity paragraphs */
-.Vegetable p {
-    margin-top: 5px;
+    font-size: 18px;
     color: #555;
 }
 
-/* Style for the total price */
-.Vegetable p.total {
-    font-weight: bold;
-    color: #e74c3c;
+/* Select style for the vegetable_selection.html */
+.select-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Style for the Vegetable-selection section */
+/* Input style for the vegetable_selection.html */
+.select-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button style for the vegetable_selection.html */
+.select-form button ,.btn{
+    background-color: #3f3d56; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effect for the vegetable_selection.html */
+.select-form button:hover {
+    background-color: #555; /* Hover background color */
+}
+
+/* Styles for the calculate_cost.html */
+
+/* Body style for the calculate_cost.html */
+.calculate-cost-body {
+    background-color: #f9f9f9; /* Background color for the body */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+/* Container style for the calculate_cost.html */
 .Vegetable-selection {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
 }
 
-/* Style for the Features section */
-.Features, .Special-orders, .Consumer-club {
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Style for section headings */
-.Features h2, .Special-orders h2, .Consumer-club h2 {
-    color: #007bff;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-/* Style for the vegetable image */
-img {
-    width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-}
-
-/* Style for the welcome message */
-p {
-    color: #555;
-    font-size: 1.1rem;
+/* Header style for the calculate_cost.html */
+.Vegetable-selection h1 {
+    color: #333; /* Text color */
+    font-size: 36px; /* Font size */
     margin-bottom: 20px;
 }
 
-/*CSS style for payment information */
-/* Style for the Payment Information form container */
-form {
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Table style for the calculate_cost.html */
+.Vegetable-selection table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-/* Style for labels */
-label {
-    display: block;
-    margin-top: 10px;
+/* Table header style for the calculate_cost.html */
+.Vegetable-selection th {
+    background-color: #3f3d56; /* Header background color */
+    color: #fff; /* Header text color */
     font-weight: bold;
-    color: #007bff;
+    padding: 10px;
 }
 
-/* Style for input fields */
-input[type="text"] {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
+/* Table cell style for the calculate_cost.html */
+.Vegetable-selection td {
     border: 1px solid #ccc;
-    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
 }
 
-/* Style for the submit button */
-button {
-    margin-top: 10px;
-    background-color: #007bff;
-    color: #fff;
+/* Total cost paragraph style for the calculate_cost.html */
+.Vegetable-selection p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Proceed to Payment button style for the calculate_cost.html */
+.Vegetable-selection button {
+    background-color: #3f3d56; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
     border: none;
-    padding: 8px 15px;
-    border-radius: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Button hover effect for the calculate_cost.html */
+.Vegetable-selection button:hover {
+    background-color: #555; /* Hover background color */
+}
+
+/* Styles for the home_page.html */
+
+/* Body style for the home_page.html */
+.home_page-body {
+    background-color: #f9f9f9; /* Background color for the body */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+/* Container style for the home_page.html */
+.Features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header style for the home_page.html */
+.Features h2 {
+    color: #333; /* Text color */
+    font-size: 32px; /* Font size */
+    margin-top: 20px;
+}
+
+/* Text style for the home_page.html */
+.Features p {
+    font-size: 18px; /* Font size */
+    margin-top: 10px;
+    color: #555; /* Text color */
+}
+
+/* Image style for the home_page.html */
+.Features img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Special orders section style for the home_page.html */
+.Special-orders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header style for the Special-orders section */
+.Special-orders h2 {
+    color: #333; /* Text color */
+    font-size: 32px; /* Font size */
+    margin-top: 20px;
+}
+
+/* Text style for the Special-orders section */
+.Special-orders p {
+    font-size: 18px; /* Font size */
+    margin-top: 10px;
+    color: #555; /* Text color */
+}
+
+/* Image style for the Special-orders section */
+.Special-orders img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Consumer club section style for the home_page.html */
+.Consumer-club {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header style for the Consumer-club section */
+.Consumer-club h2 {
+    color: #333; /* Text color */
+    font-size: 32px; /* Font size */
+    margin-top: 20px;
+}
+
+/* Text style for the Consumer-club section */
+.Consumer-club p {
+    font-size: 18px; /* Font size */
+    margin-top: 10px;
+    color: #555; /* Text color */
+}
+
+/* Image style for the Consumer-club section */
+.Consumer-club img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Styles for the select_items.html */
+
+/* Body style for the select_items.html */
+.vegetable_selection-body {
+    background-color: #f9f9f9; /* Background color for the body */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+/* Container style for the select_items.html */
+.veg_selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header style for the select_items.html */
+.veg_selection h1 {
+    color: #333; /* Text color */
+    font-size: 32px; /* Font size */
+    margin-top: 20px;
+}
+
+/* Image style for the select_items.html */
+.selection-image img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+}
+
+/* Select form style for the select_items.html */
+.select-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Label style for the select_items.html */
+.select-form label {
+    font-size: 18px; /* Font size */
+    margin-top: 10px;
+    color: #333; /* Text color */
+}
+
+/* Select input style for the select_items.html */
+.select-form select {
+    font-size: 16px; /* Font size */
+    padding: 8px;
+}
+
+/* Quantity input style for the select_items.html */
+.select-form input[type="number"] {
+    font-size: 16px; /* Font size */
+    padding: 8px;
+    margin-top: 10px;
+}
+
+/* Button style for the select_items.html */
+.select-form button {
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 16px; /* Font size */
+    padding: 10px 20px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
-/* CSS style for purchase status */
-/* Style for the Purchase Status container */
-#purchase-status {
-    background-color: #f2f2f2;
+/* Button hover effect for the select_items.html */
+.select-form button:hover {
+    background-color: #555; /* Button background color on hover */
+}
+
+/* Styles for the shopping_cart.html */
+
+/* Container style for the shopping_cart.html */
+.shopping-cart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 20px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: #f9f9f9; /* Background color for the body */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+/* Image style for the shopping_cart.html */
+.shopping-cart-image img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    margin-top: 20px;
+}
+
+/* List style for the shopping_cart.html */
+.shopping-cart-container ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List item style for the shopping_cart.html */
+.shopping-cart-container li {
+    font-size: 18px; /* Font size */
+    color: #333; /* Text color */
+    margin-top: 10px;
+}
+
+/* Back to Home link style for the shopping_cart.html */
+.shopping-cart-container a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Link text color */
+    font-size: 16px; /* Font size */
+    margin-top: 20px;
+}
+
+/* Back to Home link hover effect for the shopping_cart.html */
+.shopping-cart-container a:hover {
+    text-decoration: underline; /* Underline link on hover */
+}
+
+/* Styles for the payment_information.html and purchase_status.html pages */
+
+/* Image style for payment_information.html */
+.payment-container img.card-info {
+    max-width: 80%; /* Reduce the image width to 80% of the container */
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Container style for both pages */
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Background color for the body */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
 }
 
-/* Style for the thank you image */
-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
+/* Header style for both pages */
+.payment-container h1 {
+    font-size: 36px; /* Font size for the main header */
+    color: #ff9900; /* Orange text color */
+    margin-top: 20px;
 }
 
-/* Style for the purchase message */
-p {
-    color: #555;
-    font-size: 1.1rem;
+/* Subheader style for both pages */
+.payment-container p {
+    font-size: 20px; /* Font size for the subheader */
+    color: #333; /* Dark text color */
     margin-top: 10px;
 }
 
-/* Style for the thank you message */
-.thank-you {
-    color: #007bff;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 10px;
+/* Image style for both pages */
+.payment-container img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    margin-top: 20px;
 }
 
-
-/*This adds styles to the vegetable selection page*/
-.list-of-vegetables {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin: 20px;
+/* Payment form style for payment_information.html */
+.payment-form {
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a card-like effect */
+    border-radius: 5px;
 }
 
-.Vegetable {
-    background-color: white;
+/* Form input style for payment_information.html */
+.payment-form label {
+    font-size: 18px; /* Font size for labels */
+    color: #333; /* Dark text color */
+}
+
+/* Form input style for payment_information.html */
+.payment-form input[type="text"] {
+    width: 100%; /* Full width input */
     padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Light gray border */
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px; /* Font size for input text */
 }
 
-.Vegetable img {
-    width: 100%;
-    max-height: 150%;
-    object-fit: cover;
+/* Submit button style for payment_information.html */
+.payment-form button[type="submit"] {
+    background-color: #ff9900; /* Orange background for the button */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Font size for the button text */
+    cursor: pointer;
 }
 
-.Vegetable h2 {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    color: orangered;
-}
-
-.Vegetable p {
-    display: block;
-    color: orangered;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-    color: orangered;
-}
-
-/* Cost calculation page*/
-.Total-cost {
+/* Thank you message style for purchase_status.html */
+.thank-you-message {
+    background-color: #fff; /* White background for the message */
+    padding: 20px;
+    margin-top: 20px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a card-like effect */
+    border-radius: 5px;
 }
 
-/* Payment information */
-
-.card_info img{
-    width: 100%;
-    max-height: 150%;
-    object-fit: cover;
+/* Thank you message header style for purchase_status.html */
+.thank-you-message h1 {
+    font-size: 36px; /* Font size for the main header */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+    text-align: center
 }
 
-.payment-form form {
-    background-color: aliceblue;
-    color: black;
-}
-
-/*media query for Mobile*/
-@media only screen and (max-width: 767px) {
-  html {
-     background-image: url({{url_for('static', filename='new_veg.jpg' }});
-  }
+/* Thank you message text style for purchase_status.html */
+.thank-you-message p {
+    font-size: 20px; /* Font size for the message text */
+    color: #333; /* Dark text color */
+    margin-top: 10px;
+    text-align: center
 }

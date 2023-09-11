@@ -1,11 +1,13 @@
-<!-- purchase_status.html -->
-{% extends "base.html" %}
 
-{% block content %}
+    {% extends "base.html" %}
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
-    <img src="{{ url_for('static', filename='thank-you.jpg')}}" alt="purchase status">
+    {% block content %}
 
     <h1>Purchase Status</h1>
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">-->
+    <img src="{{ url_for('static', filename='thank-you.jpg')}}" alt="All items in stock image" class="thank_you_page">
+
     <p>{{ purchase_message }}</p>
-    <p>Thank You for shopping with us.</p>
+    <a href="/">Back to Home</a>
+
+    {% endblock %}
