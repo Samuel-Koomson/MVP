@@ -126,6 +126,7 @@ def purchase():
 
     if sufficient_money(total_cost, wallet_amount):
         return render_template('purchase_status.html', purchase_message="Purchase Successful")
+    
     else:
         return render_template('purchase_status.html', purchase_message="Insufficient funds in your wallet")
 
