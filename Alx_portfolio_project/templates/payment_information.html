@@ -1,0 +1,29 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Payment Information</h1>
+    <p>Please provide your payment information for processing</p>
+
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">-->
+    <img src="{{ url_for('static', filename='payment.jpg')}}" alt="Payment information" class="card-info">
+
+
+    <section class="payment-form">
+        <form method="post" action="/payment">
+            <label for="card-number">Credit Card Number:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="text">
+
+            <label for="card-confirmation">Confirm Card Number:</label>
+            <input type="text" id="card-confirmation" name="card-confirmation" placeholder="text">
+
+            <label for="expiry-date">Provide Expiry Date:</label>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MMYY">
+
+            <label for="card-holder-name">Cardholder Name:</label>
+            <input type="text" id="card-holder-name" name="card-holder-name" placeholder="Firstname Surname">
+
+            <button type="submit">Submit Card Information</button>
+        </form>
+    </section>
+    {% endblock %}

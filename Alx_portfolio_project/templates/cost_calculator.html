@@ -1,0 +1,20 @@
+<!-- veg_selection -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>This is your cart, review for correctness</h1>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+    <img src="{{ url_for('static', filename='new_veg.jpg')}}" alt="Vegetable selection">
+
+    <section class="Vegetable-selection">
+        {% for veg_name, quantity in shopping_cart %}
+        <article class="Vegetable">
+           <h2>{{ veg_name }}</h2>
+            <p>Price: ${{ vegetables[veg_name]['price'] }} per kg</p>
+            <p>Quantity: {{ quantity }} kg</p>
+            <p>Total: ${{ vegetables[veg_name]['price'] * quantity }}</p>
+        </article>
+        {% endfor %}
+    </section>
+{% end block %}

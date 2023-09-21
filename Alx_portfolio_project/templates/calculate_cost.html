@@ -1,0 +1,41 @@
+
+    {% extends "base.html" %}
+
+    {% block content %}
+        <h1>Review Your Shopping Cart</h1>
+
+        <img src="{{ url_for('static', filename='shop_cart.jpg')}}" alt="Vegetable selection">
+
+        <section class="Vegetable-selection">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vegetable</th>
+                        <th>Price per kg</th>
+                        <th>Quantity (kg)</th>
+                        <th>Total Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for veg_name, quantity in shopping_cart %}
+                    <tr>
+                        <td>{{ veg_name }}</td>
+                        <td>${{ vegetables[veg_name]['price'] }}</td>
+                        <td>{{ quantity }} kg</td>
+                        <td>${{ vegetables[veg_name]['price'] * quantity }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <p>Total Cost: ${{ total_cost }}</p>
+
+<!--            <form method="post" action="payment">-->
+<!--                <button type="submit">Proceed to Payment</button>-->
+<!--            </form>-->
+            <a href="/payment" class="btn">Proceed to Payment</a>
+
+        </section>
+    {% endblock %}
+
+
