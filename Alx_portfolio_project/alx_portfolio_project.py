@@ -9,7 +9,7 @@ Things to be done for this project
 7. Data storage and manipulation
 """
 from vegg_list import vegetables
-def select_items():
+"""def select_items():
     shopping_cart = []
     while True:
         veggies_needed = input("Select your list of vegetables: ").title()
@@ -30,7 +30,7 @@ def check_quantity_in_stock(shopping_cart):
             return False, veg_name
     return True, None
 # print(quantity_in_stock(5))
-
+"""
 def calculate_cost(shopping_cart):
     total_cost = 0
     for veg_name, requested_quantity in shopping_cart:
