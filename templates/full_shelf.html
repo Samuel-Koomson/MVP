@@ -1,0 +1,13 @@
+
+    {% extends "base.html" %}
+
+    {% block content %}
+
+    <h1>Available Quantities in Stock</h1>
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">-->
+    <img src="{{ url_for('static', filename='shelf.jpg')}}" alt="Full stock shelf" class="thank_you_page">
+
+    <p>{{ message }}</p>
+<!--    <a href="/">Back to Home</a>-->
+
+    {% endblock %}

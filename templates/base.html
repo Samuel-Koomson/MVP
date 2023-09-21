@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+<!-- <title>{% block page_title %}Default Title{% endblock %}</title>-->
+    </head>
+    <body>
+        <header>
+            <a href="/">CVS</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/select_items">Select Items</a></li>
+                    <li><a href="/shopping_cart">Shopping Cart</a></li>
+                    <li><a href="/check_quantity">Check Quantity</a></li>
+                    <li><a href="/calculate_cost">Calculate Cart Cost</a></li>
+                    <li><a href="/payment">Payment</a></li>
+                    <li><a href="/purchase">Purchase</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+      {% block content %}
+
+
+      {% endblock %}
+      <footer>
+            <p>&copy; 2023 The Corporate Vegetable Shop. All Rights Reserved</p>
+            <p>Developers: Samuel Koomson, Redolf Osei, Muaz Idris</p>
+        </footer>
+    </body>
+</html>

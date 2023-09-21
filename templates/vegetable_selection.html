@@ -1,0 +1,32 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<section class="veg_selection">
+<header>
+    <h1>Fill Your Vegetable Cart with all the Needed Items</h1>
+</header>
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">-->
+    <article class ="selection-image">
+    <img src="{{ url_for('static', filename='home_page_image.jpg')}}" alt="Vegetable selection">
+    </article>
+</section>
+
+<section class="select-form">
+    <form method="post">
+        <label for="vegetable">Select Vegetable:</label>
+        <select id="vegetable" name="vegetable">
+            {% for veg_name in vegetables %}
+            <option value="{{ veg_name }}">{{veg_name}}</option>
+            {% endfor %}
+        </select>
+
+        <label for="quantity">Quantity (kg):</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+        <button type="submit">Add to shopping_cart</button>
+    </form>
+ 
+</section>
+
+{% endblock %}
