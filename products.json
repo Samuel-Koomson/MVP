@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Onions",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "./images/f1.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Carrots",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/f2.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Cucumber",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "./images/f3.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Potatoes",
+        "price": 22.99,
+        "image": { "fields": { "file": { "url": "./images/f4.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Tomatoes",
+        "price": 88.99,
+        "image": { "fields": { "file": { "url": "./images/f5.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Spinnack",
+        "price": 32.99,
+        "image": { "fields": { "file": { "url": "./images/f6.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Pepper",
+        "price": 45.99,
+        "image": { "fields": { "file": { "url": "./images/f7.jpeg" } } }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Beets",
+        "price": 33.99,
+        "image": { "fields": { "file": { "url": "./images/f8.jpeg" } } }
+      }
+    }
+  ]
+}
