@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+        <title>purchase status</title>
+    </head>
+<body>
+    {% extends "base.html" %}
+
+    {% block content %}
+
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">-->
+    <img src="{{ url_for('static', filename='thank-you.jpg')}}" alt="purchase status" class="thank_you_page">
+
+    <h1>Purchase Status</h1>
+    <p>{{ purchase_message }}</p>
+    <a href="/">Back to Home</a>
+
+    {% endblock %}
+</body>
+</html>

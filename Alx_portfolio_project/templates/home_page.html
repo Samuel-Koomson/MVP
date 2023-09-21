@@ -1,0 +1,54 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+      <section class="jumbotron">
+             <h1>Welcome to The Corporate Vegetable Shop</h1>
+             <p>Do your work, and we will take care of your nutritional needs</p>
+        </section>
+<!--    <img src="{{ url_for('static', filename='home_page_image.jpg')}}" alt="vegetable image">-->
+    <article class="homepage-image">
+    <img src="{{ url_for('static', filename='new_veg.jpg')}}" alt="vegetable image">
+    </article>
+
+    <section class="Features">
+        <h2><a href="#"> Featured Vegetables</a></h2>
+        <p>Asparagus is our featured vegetable for today</p>
+        <img src="{{ url_for('static', filename='featured_veg.jpg')}}" alt="Featured Vegetable image">
+    </section>
+
+    <section class="Special-orders">
+        <h2><a href="#"> Special Vegetable Orders</a></h2>
+        <p>Send us an email if you have special vegetables that are out of our stock list</p>
+         <img src="{{ url_for('static', filename='rear_veg.jpg')}}" alt="Special Vegetable orders">
+    </section>
+
+    <section class="Consumer-club">
+       <h2><a href="#">Regular Buyers Club</a></h2>
+        <p>If you are a regular customer, use your loyalty card for exciting offers</p>
+         <img src="{{ url_for('static', filename='loyalty_card.jpeg')}}" alt="Regular clients' card image">
+    </section>
+
+    <section class="About">
+        <h2><a href="#">About</a></h2>
+        <p>This project was inspired by one of our team members who had been selling
+        vegetables to corporate people who did not have the time to go to the market on
+        regular basis. He saw the hustle in simply trying to buy healthy vegetables,
+        Thus this project was aimed at making it easy for corporate people to easily
+        find and purchase their healthy vegetables to meet the nutritional needs of their
+        families.
+
+        This is a portfolio project for the software engineering training program by ALX-Africa
+        which is certified by Holberton school. This project was executed within 3 weeks.
+
+            The developers for this project are; Samuel Koomson - https://github.com/Samuel-Koomson,
+            https://www.linkedin.com/in/samuel-kyei-koomson-111417a8/
+
+            Redolf Osei -https://github.com/redolfosei
+
+            Muazu Idris -
+        </p>
+    </section>
+{% endblock %}
+
+
