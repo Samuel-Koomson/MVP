@@ -50,6 +50,7 @@ def select_items():
         selected_vegetables = request.form.getlist('vegetable')
         quantities = request.form.getlist('quantity')
 
+
         # Add the selected items and quantities to the shopping cart
         for veggie, quantity in zip(selected_vegetables, quantities):
             cart_item = ShoppingCart(
@@ -125,8 +126,10 @@ def purchase():
     wallet_amount = 100  # Assuming a wallet balance of $100
 
     if sufficient_money(total_cost, wallet_amount):
+        ShoppingCart.query.delete()
+        db.session.commit()
+        shopping_cart.clear()
         return render_template('purchase_status.html', purchase_message="Purchase Successful")
-    
     else:
         return render_template('purchase_status.html', purchase_message="Insufficient funds in your wallet")
 
